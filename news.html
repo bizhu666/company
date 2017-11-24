@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<link rel="stylesheet" href="css/reveal-it.css" />
+		<!--[if lt IE 9]>
+	      	<script src="js/html5shiv.min.js"></script>
+	      	<script src="js/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<!--head-->
+		<header>
+			<img class="left" src="img/logo.png" />
+			<h1 class="left">RIZ-ZOAWD</h1>
+			<span class="iconfont icon right" id="menu">&#xe642;</span>
+		</header>
+		<!--menu-->
+		<div class="menu" style="display: none;">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="news.html">行内资讯</a></li>
+				<li><a href="product.html">成品展示</a></li>
+				<li><a href="zhaoshang.html">招商加盟</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="online.html">在线留言</a></li>
+			</ul>
+		</div>
+		<!--banner-->
+		<div class="banner">
+			<div class="flexslider clearfix">
+				<ul class="slides ">
+					<li><img src="img/8.jpg" /></li>
+					<li><img src="img/center (1).jpg" /></li>
+					<li><img src="img/about3.webp.jpg" /></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 hand">
+						<p>不负少时光景，欢享无负担童年</p>
+						<div class="box1">
+							<h1>提供孩子们足够的活动空间，全面锻炼开发孩子的动手能力</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="content2">
+			<!--aboutUs-->
+			<div class="aboutCon">
+				<h2 class="we">行内资询</h2>
+				<div class="new1" id="top">
+					<span class="on">最新消息</span>
+					<span>热门消息</span>
+				</div>
+				<p></p>
+				<div class="newList" id="newComtent">
+					<ul class="clearfix">
+						<li><a href="detileNew.html">1.卷纸筒手工制作可爱的动物</a><span>2017-03-14</span></li>
+						<li><a href="detileNew.html">2.废纸板制作玩具吉它</a><span>2017-04-1</span></li>
+						<li><a href="detileNew.html">3.儿童手工制作父亲节衬衫领带卡</a><span>2017-04-26</span></li>
+						<li><a href="detileNew.html">4.父亲节手工 送给爷爷的贺卡</a><span>2017-05-12</span></li>
+						<li><a href="detileNew.html">5.鹅卵石手工制作父亲节礼物</a><span>2017-05-20</span></li>
+						<li><a href="detileNew.html">6.儿童卷纸筒DIY 制作父亲节西装</a><span>2017-06-01</span></li>
+						<li><a href="detileNew.html">7.儿童手工制作夏日冰激凌</a><span>2017-06-12</span></li>
+					</ul>
+					<ul class="clearfix" style="display: none;">
+						<li><a href="detileNew.html">1.童乐汇-卡卡联萌“跃动嘉年华”活动</a><span>2017-03-01</span></li>
+						<li><a href="detileNew.html">2.5月20日“端午节亲子活动”</a><span>2017-03-29</span></li>
+						<li><a href="detileNew.html">3.2017年中国儿童中心童乐汇儿童暑假成长活动...</a><span>2017-04-21</span></li>
+						<li><a href="detileNew.html">4.童乐汇“我的花园我的景，我的景观我来造”...</a><span>2017-04-24</span></li>
+						<li><a href="detileNew.html">5.鹅卵石手工制作父亲节礼物</a><span>2017-05-20</span></li>
+						<li><a href="detileNew.html">6.“扎染手艺代代传”小小扎染师创意手工活动</a><span>2017-06-01</span></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="return" style="display: none;">
+			<span class="icon iconfont">&#xe634;</span>
+		</div>
+		<!--footer-->
+		<footer>
+			<p>咨询热线：400-000-000000</p>
+			<p>地址：上海市XX区XX路12号MOU大厦5层5xx室   </p>
+			<p>Copyright © 2009-2011,www.xxxxxx.com,All rights </p>
+		</footer>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/iconfont.js"></script>
+		<script type="text/javascript" src="js/fontsize.js"></script>
+		<script type="text/javascript" src="js/reveal-it.js"></script>
+		<script type="text/javascript" src="js/whole.js" ></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".flexslider").flexslider({
+					slideshowSpeed: 4000, //展示时间间隔ms
+					animationSpeed: 400, //滚动时间ms
+					touch: true //是否支持触屏滑动
+				});
+				
+				var options1 = {
+					id: 'box1'
+				};
+				$('.box1').initReveal(options1);
+			});
+		</script>
+	</body>
+</html>

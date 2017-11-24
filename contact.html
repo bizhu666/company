@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/iconfont.css" />
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<link rel="stylesheet" href="css/reveal-it.css" />
+		<!--[if lt IE 9]>
+	      	<script src="js/html5shiv.min.js"></script>
+	      	<script src="js/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<!--head-->
+		<header>
+			<img class="left" src="img/logo.png" />
+			<h1 class="left">RIZ-ZOAWD</h1>
+			<span class="iconfont icon right" id="menu">&#xe642;</span>
+		</header>
+		<!--menu-->
+		<div class="menu" style="display: none;">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="news.html">行内资讯</a></li>
+				<li><a href="product.html">成品展示</a></li>
+				<li><a href="zhaoshang.html">招商加盟</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="online.html">在线留言</a></li>
+			</ul>
+		</div>
+		<!--banner-->
+		<div class="banner">
+			<div class="flexslider clearfix">
+				<ul class="slides ">
+					<li><img src="img/8.jpg" /></li>
+					<li><img src="img/center (1).jpg" /></li>
+					<li><img src="img/about3.webp.jpg" /></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 hand">
+						<p>不负少时光景，欢享无负担童年</p>
+						<div class="box1">
+							<h1>提供孩子们足够的活动空间，全面锻炼开发孩子的动手能力</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="content4">
+			<div class="aboutCon">
+				<h2 class="we">联系我们</h2>
+				<div class="contact">
+					<div class="contact1">
+							<i class="icon iconfont icon-dizhixianxing"></i>
+							<span>地址：上海市xx区xx路xx广场x号楼xx号</span>
+						</div>
+						<div class="contact1">
+							<i class="icon iconfont icon-answer"></i>
+							<span>电话：86-021-xxxxxxxx</span>
+						</div>
+						<div class="contact1">
+							 <i class="icon iconfont icon-03"></i>
+							<span>传真：86-021-xxxxxxxxxxxxxxxx</span>
+						</div>
+						<div class="contact1">
+							<i class="icon iconfont icon-mail"></i>
+							<span>邮箱：xxxxxxxxx@qq.com</span>
+						</div>
+						<div class="contact1">
+							<i class="icon iconfont icon-browser"></i>
+							<span>网址：www.xxxxxx.com</span>
+						</div>
+				</div>
+		</div>
+		<!---------------------map------------------>
+		<!--<p class="map">地图导航</p>-->
+		<div style="width:100%;height:20rem;" id="map"></div>
+
+		<!--footer-->
+		<footer>
+			<p>咨询热线：400-000-000000</p>
+			<p>地址：上海市XX区XX路12号MOU大厦5层5xx室   </p>
+			<p>Copyright © 2009-2011,www.xxxxxx.com,All rights </p>
+		</footer>
+		<div id="return" style="display: none;">
+			<span class="icon iconfont">&#xe634;</span>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/iconfont.js"></script>
+		<script type="text/javascript" src="js/fontsize.js"></script>
+		<script type="text/javascript" src="js/reveal-it.js"></script>
+		<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=o2SfmKtBd1by9pyYUUroccCt2g0S53G4"></script>
+		<script type="text/javascript" src="js/whole.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".flexslider").flexslider({
+					slideshowSpeed: 4000, //展示时间间隔ms
+					animationSpeed: 400, //滚动时间ms
+					touch: true //是否支持触屏滑动
+				});
+				
+				var options1 = {
+					id: 'box1'
+				};
+				$('.box1').initReveal(options1);
+				
+				
+				
+				//创建和初始化地图函数：
+			function initMap() {
+				createMap(); //创建地图
+				setMapEvent(); //设置地图事件
+				addMapControl(); //向地图添加控件
+				addMapOverlay(); //向地图添加覆盖物
+			}
+
+			function createMap() {
+				map = new BMap.Map("map");
+				map.centerAndZoom(new BMap.Point(118.802891, 32.064735), 12);
+			}
+
+			function setMapEvent() {
+				map.enableScrollWheelZoom();
+				map.enableKeyboard();
+				map.enableDragging();
+				map.enableDoubleClickZoom()
+			}
+
+			function addClickHandler(target, window) {
+				target.addEventListener("click", function() {
+					target.openInfoWindow(window);
+				});
+			}
+
+			function addMapOverlay() {}
+			//向地图添加控件
+			function addMapControl() {
+				var scaleControl = new BMap.ScaleControl({
+					anchor: BMAP_ANCHOR_BOTTOM_LEFT
+				});
+				scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+				map.addControl(scaleControl);
+				var navControl = new BMap.NavigationControl({
+					anchor: BMAP_ANCHOR_TOP_LEFT,
+					type: BMAP_NAVIGATION_CONTROL_LARGE
+				});
+				map.addControl(navControl);
+				var overviewControl = new BMap.OverviewMapControl({
+					anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+					isOpen: true
+				});
+				map.addControl(overviewControl);
+			}
+			var map;
+			initMap();
+		
+
+			});
+		</script>
+	</body>
+</html>

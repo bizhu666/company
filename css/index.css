@@ -1,0 +1,429 @@
+.on {
+  background: palevioletred;
+}
+/**** ** ** header**** ************/
+header {
+  height: 5.03703704rem;
+  margin-bottom: 0.2962963rem;
+  margin-top: 0.2962963rem;
+  line-height: 5.03703704rem;
+}
+header img {
+  width: 5.92592593rem;
+  height: 5.03703704rem;
+  margin-left: 0.88888889rem;
+}
+header h1 {
+  font-weight: normal;
+  font-family: "微软雅黑";
+  margin-left: 0.88888889rem;
+  font-size: 1.77777778rem;
+  color: #3b221e;
+}
+header .iconfont {
+  color: #3b221e;
+  font-size: 2.96296296rem;
+}
+/**** ** ** banner**** ************/
+.banner {
+  position: relative;
+}
+.banner .flexslider img {
+  height: 17.65925926rem;
+}
+.banner .container {
+  z-index: 99999;
+  position: absolute;
+  left: 10%;
+  bottom: 20%;
+  width: 80%;
+}
+.banner .container .row .hand {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.banner .container .row .hand p {
+  padding-top: 0.59259259rem;
+  font-size: 1.18518519rem;
+  color: #4d4d4d;
+}
+.banner .container .row .hand .box1 h1 {
+  margin-top: 0.59259259rem;
+  font-size: 1.33333333rem;
+  font-weight: normal;
+  color: #000000;
+}
+/**** ** ** content**** ************/
+.content .aboutCon .title {
+  height: 2.96296296rem;
+  line-height: 2.96296296rem;
+  margin-top: 2.37037037rem;
+  margin-bottom: 1.18518519rem;
+  border-bottom: 1px solid #ECECEC;
+}
+.content .aboutCon .title h2 {
+  float: left;
+  font-weight: normal;
+  font-size: 1.48148148rem;
+  color: orangered;
+  margin-left: 1.18518519rem;
+}
+.content .aboutCon .title h2 span {
+  font-size: 1.48148148rem;
+  color: #3B221E;
+}
+.content .aboutCon .title a {
+  float: right;
+  font-size: 1.18518519rem;
+  margin-right: 1.18518519rem;
+  color: #3B221E;
+}
+.content .aboutCon .title span {
+  margin-right: 0.2962963rem;
+}
+.content .aboutCon .aboutImg {
+  width: 23.7037037rem;
+  height: 7.7037037rem;
+  margin-left: 0.59259259rem;
+}
+.content .aboutCon .aboutImg #div1 {
+  width: 30.51851852rem;
+  height: 7.7037037rem;
+  position: relative;
+  margin: 1.77777778rem auto;
+  overflow: hidden;
+}
+.content .aboutCon .aboutImg #div1 ul {
+  width: 30.51851852rem;
+  height: 7.7037037rem;
+  position: relative;
+}
+.content .aboutCon .aboutImg #div1 ul li {
+  float: left;
+  height: 7.7037037rem;
+  padding-right: 0.59259259rem;
+}
+.content .aboutCon .aboutImg #div1 ul li img {
+  width: 8.88888889rem;
+  height: 7.7037037rem;
+  border: 1px solid #EEEEEE;
+  padding: 2px;
+  display: inline-block;
+}
+.content .aboutCon .aboutList {
+  text-indent: 2em;
+  margin-bottom: 0.88888889rem;
+  font-size: 1.18518519rem;
+  color: #3B221E;
+  padding: 0 0.88888889rem;
+  line-height: 1.77777778rem;
+}
+.content .newList .new {
+  width: 100%;
+}
+.content .newList .new ul {
+  line-height: 1.77777778rem;
+}
+.content .newList .new ul li {
+  margin-top: 0.59259259rem;
+  line-height: 1.95555556rem;
+}
+.content .newList .new ul li a {
+  float: left;
+  margin-left: 0.88888889rem;
+  font-size: 1.18518519rem;
+  color: #3B221E;
+}
+.content .newList .new ul li span {
+  float: right;
+  font-size: 1.18518519rem;
+  color: #4D4D4D;
+  margin-right: 0.59259259rem;
+}
+.content .product {
+  margin-bottom: 1.18518519rem;
+}
+.content .product .proList .proCon {
+  padding: 0.2962963rem 0;
+  border-bottom: 1px solid #EEEEEE;
+}
+.content .product .proList .proCon img {
+  width: 11.85185185rem;
+  height: 8.88888889rem;
+  margin-left: 1.18518519rem;
+}
+.content .product .proList .proCon div {
+  width: 50%;
+  margin-left: 0.2962963rem;
+}
+.content .product .proList .proCon div h3 {
+  font-size: 1.48148148rem;
+  margin-bottom: 0.59259259rem;
+}
+.content .product .proList .proCon div p {
+  font-size: 1.18518519rem;
+  text-align: left;
+}
+.content .product .proList .proCon:last-child {
+  border-bottom: none;
+}
+.menu {
+  width: 100%;
+  z-index: 9999999;
+  position: fixed;
+  right: 0;
+  top: 69px;
+  background: rgba(0, 0, 0, 0.8);
+  height: 26.66666667rem;
+  text-align: center;
+}
+.menu ul li {
+  padding-top: 1.18518519rem;
+  padding-bottom: 1.18518519rem;
+  border-bottom: 1px solid #6d6464;
+}
+.menu ul li a {
+  color: #FFFFFF;
+  font-size: 1.18518519rem;
+}
+.menu ul li:last-child {
+  border: none;
+}
+/********************footer**************************/
+footer {
+  background: #ECECEC;
+  height: 7.7037037rem;
+}
+footer p {
+  font-size: 1.18518519rem;
+  margin-bottom: 0.59259259rem;
+  color: #000;
+  margin-left: 1.18518519rem;
+}
+footer p:first-child {
+  padding-top: 0.59259259rem;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
+/********************return**************************/
+#return {
+  width: 2.96296296rem;
+  height: 3.55555556rem;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 2.96296296rem;
+  right: 0.59259259rem;
+}
+#return span {
+  text-align: center;
+  font-size: 2.96296296rem;
+  color: #FFFFFF;
+}
+/********************about**************************/
+.content1 .aboutCon .we {
+  padding-bottom: 0.59259259rem;
+  margin: 1.48148148rem auto;
+  width: 5.33333333rem;
+  font-weight: normal;
+  font-size: 1.33333333rem;
+  color: pink;
+  border-bottom: 2px solid #3B221E;
+}
+.content1 .aboutCon .con {
+  margin: 1.48148148rem 1.48148148rem;
+}
+.content1 .aboutCon .con p {
+  font-size: 1.18518519rem;
+  color: #3B221E;
+  line-height: 1.77777778rem;
+  text-indent: 2em;
+  margin-top: 0.88888889rem;
+}
+.content1 .aboutCon .aboutImg {
+  width: 29.62962963rem;
+  height: 7.7037037rem;
+}
+/********************news**************************/
+.content2 .aboutCon .we {
+  padding-bottom: 0.59259259rem;
+  margin: 1.48148148rem auto;
+  width: 5.33333333rem;
+  font-weight: normal;
+  font-size: 1.33333333rem;
+  color: pink;
+  border-bottom: 2px solid #3B221E;
+}
+.content2 .aboutCon .new1 {
+  margin-top: 2.37037037rem;
+}
+.content2 .aboutCon .new1 span {
+  font-size: 0.88888889rem;
+  color: #DDDDDD;
+  padding: 0.59259259rem 1.18518519rem;
+}
+.content2 .aboutCon .newList {
+  margin-bottom: 5.92592593rem;
+}
+.content2 .aboutCon .newList ul {
+  line-height: 1.77777778rem;
+}
+.content2 .aboutCon .newList ul li {
+  margin-top: 0.59259259rem;
+}
+.content2 .aboutCon .newList ul li a {
+  width: 70%;
+  float: left;
+  margin-left: 0.88888889rem;
+  font-size: 1.18518519rem;
+  color: #3B221E;
+  overflow: hidden;
+}
+.content2 .aboutCon .newList ul li span {
+  width: 20%;
+  float: right;
+  font-size: 1.18518519rem;
+  color: #4D4D4D;
+  margin-right: 0.59259259rem;
+}
+.content2 p {
+  margin-top: 0.59259259rem;
+  border-top: 2px solid #EEEEEE;
+}
+/********************online**************************/
+.content3 .aboutCon .we {
+  padding-bottom: 0.59259259rem;
+  margin: 1.48148148rem auto;
+  width: 5.33333333rem;
+  font-weight: normal;
+  font-size: 1.33333333rem;
+  color: pink;
+  border-bottom: 2px solid #3B221E;
+}
+.content3 .aboutCon .online {
+  text-align: center;
+}
+.content3 .aboutCon .online p {
+  color: #DDDDDD;
+  font-size: 1.48148148rem;
+}
+.content3 .aboutCon .online p:nth-child(2) {
+  font-size: 1.18518519rem;
+  color: #333333;
+  padding: 0.59259259rem 0;
+}
+.content3 .aboutCon .online .onlineCon form div {
+  text-align: left;
+  margin: 1.18518519rem;
+}
+.content3 .aboutCon .online .onlineCon form div label {
+  font-size: 0.59259259rem;
+}
+.content3 .aboutCon .online .onlineCon form div input {
+  height: 1.18518519rem;
+  width: 17.77777778rem;
+}
+.content3 .aboutCon .online .onlineCon form div input:last-child {
+  padding: 0.59259259rem 0.88888889rem;
+}
+.content3 .aboutCon .online .onlineCon form div textarea {
+  height: 11.85185185rem;
+  width: 19.55555556rem;
+}
+.content3 .aboutCon .online .onlineCon .button {
+  margin-left: 1.18518519rem;
+  border: none;
+  background: #DB7093;
+  padding: 0.59259259rem 2.37037037rem;
+  font-size: 1.18518519rem;
+  margin-bottom: 1.18518519rem;
+  color: #FFFFFF;
+}
+/********************contact**************************/
+.content4 .aboutCon .we {
+  padding-bottom: 0.59259259rem;
+  margin: 1.48148148rem auto;
+  width: 5.33333333rem;
+  font-weight: normal;
+  font-size: 1.33333333rem;
+  color: pink;
+  border-bottom: 2px solid #3B221E;
+}
+.content4 .aboutCon .contact div {
+  margin-left: 2.37037037rem;
+  margin-top: 1.77777778rem;
+  margin-bottom: 1.77777778rem;
+}
+.content4 .aboutCon .contact div span {
+  font-size: 1.18518519rem;
+}
+.content4 .aboutCon .contact div span:first-child {
+  font-size: 1.77777778rem;
+  margin-left: 1.77777778rem;
+  color: red;
+}
+#map {
+  margin-top: 2.96296296rem;
+  margin-bottom: 0.88888889rem;
+}
+/********************zhaoshang**************************/
+.content5 .aboutCon .we {
+  padding-bottom: 0.59259259rem;
+  margin: 1.48148148rem auto;
+  width: 5.33333333rem;
+  font-weight: normal;
+  font-size: 1.33333333rem;
+  color: pink;
+  border-bottom: 2px solid #3B221E;
+}
+.content5 .aboutCon .zhaoshanng {
+  margin: 0.88888889rem 0;
+}
+.content5 .aboutCon .zhaoshanng p {
+  font-size: 1.18518519rem;
+  margin: 1.18518519rem 0.59259259rem;
+  color: #666666;
+  line-height: 1.77777778rem;
+  text-indent: 2em;
+}
+.content5 .aboutCon .zhaoshanng img {
+  width: 17.77777778rem;
+  height: 14.81481481rem;
+  margin: 0 auto;
+  display: block;
+}
+/********************detile**************************/
+.content6 div {
+  margin-bottom: 1.18518519rem;
+}
+.content6 div h2 {
+  font-size: 1.48148148rem;
+  color: deeppink;
+  margin: 1.18518519rem;
+}
+.content6 div p {
+  font-size: 1.18518519rem;
+  color: #3B221E;
+  margin: 1.18518519rem 0.59259259rem;
+  text-indent: 2em;
+}
+/********************detilenew**************************/
+.content7 h2 {
+  font-size: 1.48148148rem;
+  color: deeppink;
+  margin: 1.18518519rem;
+}
+.content7 p {
+  font-size: 1.18518519rem;
+  color: #3B221E;
+  margin: 1.18518519rem 1.18518519rem;
+}
+.content7 ul {
+  margin: 0.88888889rem 1.77777778rem;
+}
+.content7 ul li {
+  font-size: 1.18518519rem;
+  color: #3B221E;
+  line-height: 1.77777778rem;
+}

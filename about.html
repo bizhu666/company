@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/flexslider.css" />
+		<link rel="stylesheet" href="css/reveal-it.css" />
+		<!--[if lt IE 9]>
+	      	<script src="js/html5shiv.min.js"></script>
+	      	<script src="js/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<!--head-->
+		<header>
+			<img class="left" src="img/logo.png" />
+			<h1 class="left">RIZ-ZOAWD</h1>
+			<span class="iconfont icon right" id="menu">&#xe642;</span>
+		</header>
+		<!--menu-->
+		<div class="menu" style="display: none;">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="about.html">关于我们</a></li>
+				<li><a href="news.html">行内资讯</a></li>
+				<li><a href="product.html">成品展示</a></li>
+				<li><a href="zhaoshang.html">招商加盟</a></li>
+				<li><a href="contact.html">联系我们</a></li>
+				<li><a href="online.html">在线留言</a></li>
+			</ul>
+		</div>
+		<!--banner-->
+		<div class="banner">
+			<div class="flexslider clearfix">
+				<ul class="slides ">
+					<li><img src="img/8.jpg" /></li>
+					<li><img src="img/center (1).jpg" /></li>
+					<li><img src="img/about3.webp.jpg" /></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 hand">
+						<p>不负少时光景，欢享无负担童年</p>
+						<div class="box1">
+							<h1>提供孩子们足够的活动空间，全面锻炼开发孩子的动手能力</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--content-->
+		<div class="content1 content">
+			<!--aboutUs-->
+			<div class="aboutCon">
+				<h2 class="we">关于我们</h2>
+				<div class="con">
+					<p>RIZ-ZOAWD有限公司是一家手工创作、创意设计、成品制作。公司成立以来一直与国内知名材料生产厂家紧密合作，建立了战略合作伙伴关系，始终走在国内礼品界的前沿...</p>
+					<p> 我们的经营理念：“诚信至上，合作共赢！” 我们的服务宗旨：“专业及时，全心全意”、不论您身处何处，**时刻准备着以最快的速度、最优的产品、最低的价格，随时为您提供免费的咨询和服务</p>
+					<p>简单来说，DIY就是自己动手，没有性别、年龄的区别，每个人都可以自己做，利用DIY做出来的物品自有一份自在与舒适。</p>
+					<p>DIY是英文Do It Yourself的缩写，又译为自己动手做，DIY原本是个名词短语，往往被当作形容词使用，意指“自助的”。在DIY的概念形成之后，也渐渐兴起一股与其相关的周边产业，越来越多的人开始思考如何让DIY融入生活。</p>
+					<p>夏季的海边，用沙子堆积出一座城堡，孩子们也能成为沙雕艺术家。您需要的工具只是沙子、水和一些小工具。快点带上你的孩子一起去海边吧。 游戏工具：塑料筒、铲子、习惯、计量勺、雕刻刀等等。 素描 首先用铲子在沙子上先描绘出城堡的大概轮廓，有助于标注准确位置。 挖掘 将外部的沙子铲到城堡轮廓中，形成沙子堆，高 ...	阅读全文 »</p>
+				</div>
+				<!--<div class="aboutImg">
+					<div class="left clearfix" id="div1">
+						<ul class="clearfix">
+							<li><img class="left" src="img/about1.webp.jpg" alt=""/></li>
+							<li><img class="left" src="img/about.jpg" alt=""/></li>
+							<li><img class="left" src="img/4.jpg" alt=""/></li>
+						</ul>
+					</div>
+				</div>-->
+			</div>
+		</div>
+		<!--footer-->
+		<footer>
+			<p>咨询热线：400-000-000000</p>
+			<p>地址：上海市XX区XX路12号MOU大厦5层5xx室   </p>
+			<p>Copyright © 2009-2011,www.xxxxxx.com,All rights </p>
+		</footer>
+		<div id="return" style="display: none;">
+			<span class="icon iconfont">&#xe634;</span>
+		</div>
+		<script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+		<script type="text/javascript" src="js/iconfont.js"></script>
+		<script type="text/javascript" src="js/fontsize.js"></script>
+		<script type="text/javascript" src="js/reveal-it.js"></script>
+		<script type="text/javascript" src="js/whole.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$(".flexslider").flexslider({
+					slideshowSpeed: 4000, //展示时间间隔ms
+					animationSpeed: 400, //滚动时间ms
+					touch: true //是否支持触屏滑动
+				});
+				
+				var options1 = {
+					id: 'box1'
+				};
+				$('.box1').initReveal(options1);
+			});
+		</script>
+	</body>
+</html>
